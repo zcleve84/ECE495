@@ -1,0 +1,15 @@
+<%= auto_discovery_link_tag :atom, posts_path(:format => :atom) %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>THE BLOG</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
